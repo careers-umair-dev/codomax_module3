@@ -5,7 +5,7 @@
    ========================================================================== */
 
 // Paste your deployed backend URL here (Vercel backend project), ending in /api
-const PRODUCTION_API_URL = 'https://YOUR-BACKEND-PROJECT.vercel.app/api';
+const PRODUCTION_API_URL = 'https://codomax-module3.onrender.com/api';
 
 const IS_LOCAL = ['localhost', '127.0.0.1', ''].includes(window.location.hostname);
 
