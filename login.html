@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — Quill</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M9 10h14M9 16h14M9 22h9" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </span>
+      Quill
+    </a>
+    <nav id="navLinks" class="nav-links" aria-label="Primary">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="create-blog.html" class="nav-link">Write a post</a>
+    </nav>
+    <div class="nav-actions">
+      <div id="navAuthSlot" class="nav-actions"></div>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="auth-shell">
+  <div class="auth-card card">
+    <div class="brand-mark" style="width:44px;height:44px;">
+      <svg viewBox="0 0 32 32" fill="none" style="width:100%;height:100%;"><path d="M9 10h14M9 16h14M9 22h9" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+    </div>
+    <div class="auth-header">
+      <h1>Welcome back</h1>
+      <p>Log in to write and manage your posts.</p>
+    </div>
+
+    <div id="loginBanner" class="banner"></div>
+
+    <form id="loginForm" novalidate>
+      <div class="field" id="loginEmailField">
+        <label for="loginEmail">Email address</label>
+        <input type="email" id="loginEmail" name="email" placeholder="you@example.com" autocomplete="email">
+        <span class="error-msg"></span>
+      </div>
+
+      <div class="field" id="loginPasswordField">
+        <label for="loginPassword">Password</label>
+        <div class="password-field">
+          <input type="password" id="loginPassword" name="password" placeholder="Enter your password" autocomplete="current-password">
+          <button type="button" class="password-toggle">Show</button>
+        </div>
+        <span class="error-msg"></span>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Log in</button>
+    </form>
+
+    <p class="auth-switch">Don't have an account? <a href="register.html">Sign up</a></p>
+
+    <p class="demo-note">Demo tip: create an account on the Sign up page first — this app stores everything locally in your browser, so no account exists until you register one.</p>
+  </div>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/api.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

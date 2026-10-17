@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Write a post — Quill</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/create-blog.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M9 10h14M9 16h14M9 22h9" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </span>
+      Quill
+    </a>
+    <nav id="navLinks" class="nav-links" aria-label="Primary">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="create-blog.html" class="nav-link">Write a post</a>
+    </nav>
+    <div class="nav-actions">
+      <div id="navAuthSlot" class="nav-actions"></div>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <div class="editor-header">
+      <h1 id="editorTitle">Write a new post</h1>
+      <p id="editorSubtitle">Share something with the Quill community.</p>
+    </div>
+
+    <div class="editor-layout">
+      <form id="blogForm" class="editor-form card" novalidate>
+        <div class="field" id="blogTitleField">
+          <label for="blogTitle">Title</label>
+          <input type="text" id="blogTitle" name="title" placeholder="Give your post a clear, specific title">
+          <span class="error-msg"></span>
+        </div>
+
+        <div class="field" id="blogCategoryField">
+          <label for="blogCategory">Category</label>
+          <select id="blogCategory" name="category">
+            <option value="">Select a category</option>
+            <option value="Development">Development</option>
+            <option value="Design">Design</option>
+            <option value="Lifestyle">Lifestyle</option>
+            <option value="Business">Business</option>
+            <option value="News">News</option>
+          </select>
+          <span class="error-msg"></span>
+        </div>
+
+        <div class="field">
+          <label for="blogImage">Cover image (optional)</label>
+          <div class="file-drop" id="fileDrop" tabindex="0" role="button" aria-label="Upload a cover image">
+            <input type="file" id="blogImage" accept="image/*">
+            <span class="file-drop-label">Click to upload, or drag an image here</span>
+          </div>
+          <div class="file-preview" id="filePreview">
+            <img id="filePreviewImg" alt="Cover image preview">
+          </div>
+        </div>
+
+        <div class="field" id="blogContentField">
+          <label for="blogContent">Content</label>
+          <textarea id="blogContent" name="content" placeholder="Write your post here. Leave a blank line between paragraphs."></textarea>
+          <span class="hint">Minimum 20 characters.</span>
+          <span class="error-msg"></span>
+        </div>
+
+        <div class="form-actions">
+          <a href="dashboard.html" class="btn btn-ghost">Cancel</a>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Publish post</button>
+        </div>
+      </form>
+
+      <aside class="preview-panel card">
+        <h2>Live preview</h2>
+        <div class="preview-card">
+          <div class="thumb"><img id="previewThumb" src="assets/placeholder-thumb.svg" alt=""></div>
+          <span class="tag" id="previewCategory">Category</span>
+          <h3 id="previewTitle" style="margin-top:8px;">Your post title will appear here</h3>
+          <p class="excerpt" id="previewExcerpt">A short excerpt from your content will show up here as you write.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/api.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/create-blog.js"></script>
+</body>
+</html>

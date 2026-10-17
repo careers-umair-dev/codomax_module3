@@ -1,0 +1,74 @@
+[
+  {
+    "id": "511785fb-2644-40bb-abe6-5a713ed8248c",
+    "title": "Designing interfaces people actually enjoy using",
+    "category": "Design",
+    "excerpt": "Good interface design is mostly invisible. People notice friction, not flourishes — the button that was hard to find, the form that rejected…",
+    "content": "Good interface design is mostly invisible. People notice friction, not flourishes — the button that was hard to find, the form that rejected a valid answer, the page that loaded before they had time to read anything.\n\nStart by writing down the one thing a screen must let someone do, then remove everything that competes with it. Consistent spacing, a restrained color palette, and predictable navigation do more for \"delight\" than any animation ever will.\n\nWhen in doubt, ship the plain version first. You can always add polish once the structure earns it.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+    "authorId": "seed",
+    "authorName": "Quill Team",
+    "createdAt": "2026-10-06T04:31:56.555Z",
+    "updatedAt": "2026-10-06T04:31:56.555Z"
+  },
+  {
+    "id": "630b4715-b770-439e-944f-bc5b020bf880",
+    "title": "A practical guide to writing your first REST API",
+    "category": "Development",
+    "excerpt": "Every API starts the same way: a resource, a verb, and a response. Before reaching for a framework, sketch the endpoints on paper — what doe…",
+    "content": "Every API starts the same way: a resource, a verb, and a response. Before reaching for a framework, sketch the endpoints on paper — what does a client send, and what should come back?\n\nKeep routes named after nouns (/posts, /users) and let HTTP methods carry the verbs (GET, POST, PUT, DELETE). Return meaningful status codes and consistent error shapes, because the developer using your API will thank you for it at 2am.\n\nOnce the shape feels right, the implementation is the easy part.",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+    "authorId": "seed",
+    "authorName": "Quill Team",
+    "createdAt": "2026-10-05T02:31:56.555Z",
+    "updatedAt": "2026-10-05T02:31:56.555Z"
+  },
+  {
+    "id": "26d51cd0-4ef5-44ae-93f0-fe78473de5e6",
+    "title": "Why small habits outperform big resolutions",
+    "category": "Lifestyle",
+    "excerpt": "Ambitious goals fail quietly. They ask for a version of you that only shows up on your best days, and best days are rare. A habit that survi…",
+    "content": "Ambitious goals fail quietly. They ask for a version of you that only shows up on your best days, and best days are rare.\n\nA habit that survives a bad day — five minutes, one page, one short walk — compounds in a way that a perfect plan never does. The trick isn't motivation, it's making the next action so small there's no reason not to do it.\n\nTrack the streak, not the outcome. The outcome follows on its own.",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80",
+    "authorId": "seed",
+    "authorName": "Quill Team",
+    "createdAt": "2026-10-04T00:31:56.555Z",
+    "updatedAt": "2026-10-04T00:31:56.555Z"
+  },
+  {
+    "id": "350591d3-c78d-4b3a-ae99-22114bfc18ac",
+    "title": "Understanding async/await without the jargon",
+    "category": "Development",
+    "excerpt": "Asynchronous code has a bad reputation because it's usually explained with the words used to implement it, not the problem it solves. Here's…",
+    "content": "Asynchronous code has a bad reputation because it's usually explained with the words used to implement it, not the problem it solves.\n\nHere's the plain version: some things take time — reading a file, waiting on a network reply — and your program shouldn't freeze while it waits. `async` marks a function as one that might pause. `await` marks the exact point where it pauses, and hands control back until the result is ready.\n\nOnce you read it as \"pause here, resume when ready,\" the syntax stops feeling like magic.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80",
+    "authorId": "seed",
+    "authorName": "Quill Team",
+    "createdAt": "2026-10-02T22:31:56.555Z",
+    "updatedAt": "2026-10-02T22:31:56.555Z"
+  },
+  {
+    "id": "92491acc-0259-4757-9128-901489089f1a",
+    "title": "The case for writing things down",
+    "category": "Lifestyle",
+    "excerpt": "Memory is unreliable in a specific way: it keeps the feeling of an idea and drops the details. Writing forces the details back in. A short d…",
+    "content": "Memory is unreliable in a specific way: it keeps the feeling of an idea and drops the details. Writing forces the details back in.\n\nA short daily note — what happened, what you decided, what you'd change — becomes a record you can actually trust later, unlike your recollection of \"that one week in March.\"\n\nIt doesn't need to be good writing. It needs to exist.",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
+    "authorId": "seed",
+    "authorName": "Quill Team",
+    "createdAt": "2026-10-01T20:31:56.555Z",
+    "updatedAt": "2026-10-01T20:31:56.555Z"
+  },
+  {
+    "id": "f527dbcf-0807-4b11-aa2a-787b32e15c9d",
+    "title": "Color theory basics every developer should know",
+    "category": "Design",
+    "excerpt": "You don't need a design degree to avoid the most common color mistakes. Start with contrast: text should be readable at a glance, which usua…",
+    "content": "You don't need a design degree to avoid the most common color mistakes. Start with contrast: text should be readable at a glance, which usually means dark text on light backgrounds or vice versa, not a clever mid-tone.\n\nPick one accent color and let it do all the pointing — links, primary buttons, active states. Everything else can live in a small range of grays.\n\nWhen a palette feels flat, the fix is almost never a new color. It's more contrast between the ones you already have.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+    "authorId": "seed",
+    "authorName": "Quill Team",
+    "createdAt": "2026-09-30T18:31:56.555Z",
+    "updatedAt": "2026-09-30T18:31:56.555Z"
+  }
+]

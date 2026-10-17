@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quill — Ideas worth writing down</title>
+<meta name="description" content="Quill is a blog for developers, designers, and curious people who like writing things down.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M9 10h14M9 16h14M9 22h9" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </span>
+      Quill
+    </a>
+
+    <nav id="navLinks" class="nav-links" aria-label="Primary">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="create-blog.html" class="nav-link">Write a post</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div id="navAuthSlot" class="nav-actions"></div>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container">
+      <h1>Ideas worth writing down.</h1>
+      <p>Notes on design, development, and the small habits that make both easier. Written by the Quill community.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="toolbar">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="search" id="searchInput" placeholder="Search posts..." aria-label="Search posts">
+      </div>
+      <div class="category-filters" id="categoryFilters" role="group" aria-label="Filter by category"></div>
+    </div>
+
+    <div class="featured-post" id="featuredPost"></div>
+
+    <div class="blog-grid" id="blogGrid"></div>
+    <div class="empty-state" id="gridEmptyState" style="display:none;">
+      <h3>No posts match your search</h3>
+      <p>Try a different keyword or category.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; 2026 Quill. Connected to a Node.js + Express API.</span>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="login.html">Log in</a>
+      <a href="register.html">Sign up</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/api.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

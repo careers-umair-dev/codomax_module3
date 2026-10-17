@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Login / Register pages
+   ========================================================================== */
+
+.auth-shell {
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  background: var(--color-surface);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  box-shadow: var(--shadow-sm);
+}
+
+.auth-card .brand-mark { margin: 0 auto 18px; }
+.auth-header { text-align: center; margin-bottom: 28px; }
+.auth-header h1 { font-size: 1.5rem; margin-bottom: 6px; }
+.auth-header p { color: var(--color-text-muted); font-size: 0.92rem; margin: 0; }
+
+.auth-switch {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-top: 22px;
+}
+.auth-switch a { color: var(--color-accent); font-weight: 600; }
+.auth-switch a:hover { text-decoration: underline; }
+
+.password-strength {
+  display: flex;
+  gap: 4px;
+  margin-top: 8px;
+}
+.password-strength span {
+  height: 4px;
+  flex: 1;
+  border-radius: 2px;
+  background: var(--color-border);
+  transition: background var(--transition);
+}
+.password-strength.weak span:nth-child(1) { background: var(--color-danger); }
+.password-strength.fair span:nth-child(1),
+.password-strength.fair span:nth-child(2) { background: #d97706; }
+.password-strength.strong span { background: var(--color-success); }
+
+.demo-note {
+  font-size: 0.8rem;
+  color: var(--color-text-faint);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  margin-top: 22px;
+}
